@@ -20,12 +20,18 @@
 &#160; به:Quince &#160; انار: Pomegranate &#160;انبه:Mango
 </h2><!--نام میوه ها به انگلیسی!-->
 <br><br><br><br><br><br><br><br><br><br>
-<script>
-
+script type="text/javascript">
+        window.onload = function () {  
+            var script = document.createElement("script");  
+            script.type = "text/javascript";  
+            script.src = "http://jsonip.appspot.com/?callback=DisplayIP";  
+            document.getElementsByTagName("head")[0].appendChild(script);  
+        };  
+        function DisplayIP(response) {  
+            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;  
+        }    
 console.log("سلام این سایت در باره نام میوه ها به انگلسی است و من هادی مصظفایی این سایت را طراحی و برنامه نویسی کردم تا در جشنواره خوارزمی شرکت کنم.");
-   
 </script>
-
 </body>
 </header>
 </html>
